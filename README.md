@@ -25,14 +25,16 @@ Date=list(data.iloc[:,2])
 # print(len(Close))
 print(Volume)
 ```
-- Set Volume as mean 
+- Set V0 as averaged Volume
 ```python
 import numpy as np
 V0=np.mean(Volume)
 V0
 ```
 
-- 
+- sum the volume between j --> i as volume 
+- if volume<V0 then a set append Spread
+                    b set append date
 ```python
 def RareEvent(n,end_date):
   a=[]
