@@ -6,19 +6,19 @@
 !pip install yfinance
 ```
 
-- Get stock informations of Apple from  2021-11-15 to 2022-11-15
+- Get Apple stock informations from  2021-11-15 to 2022-11-15
 ```python
 import pandas as pd                                #導入 pandas套件
 import yfinance as yf                              #導入 finance套件
 
 tickers = ['AAPL']   #設置股票代碼
-start_date = '2021-11-15'                          #設定開始日期
-end_date = '2022-11-15'                            #設定結束日期
+start_date = '2021-11-15'                          #set start date
+end_date = '2022-11-15'                            #set end date
 
-data = yf.download(tickers, start_date, end_date)  #獲取股票數據存取變量
+data = yf.download(tickers, start_date, end_date)   #data value
 data['Date']=data.index
 
-data=data[['Adj Close','Volume','Date']]               #取出調整後收盤價
+data=data[['Adj Close','Volume','Date']]               #Get Adj Close
 Close=list(data.iloc[:,0])
 Volume=list(data.iloc[:,1])
 Date=list(data.iloc[:,2])
