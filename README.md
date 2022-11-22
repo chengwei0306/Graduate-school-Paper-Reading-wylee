@@ -31,3 +31,27 @@ import numpy as np
 V0=np.mean(Volume)
 V0
 ```
+
+- 
+```python
+def RareEvent(n,end_date):
+  a=[]
+  b=[]
+  volume=0
+  
+  for i in range(0,n):                  #len of all
+    volume=0
+    for j in range(i):                  #from j to i
+      volume+=Volume[j]
+      if volume<V0:                     #mean()
+        a.append(Close[n]-Close[i])
+        b.append([end_date,Date[i]])
+        # print(a)
+        
+  print(max(a))
+  print(b[-1:])
+    # print(volume)
+    # print("------")
+
+RareEvent(251,end_date)
+```
