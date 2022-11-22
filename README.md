@@ -53,5 +53,5 @@ def RareEvent(n,end_date):
     # print(volume)
     # print("------")
 
-RareEvent(251,end_date)
+RareEvent(251,end_date)                #251-->amount of the data
 ```
