@@ -1,1 +1,3 @@
-# Graduate-school-Paper-Reading-wylee-
+# Graduate-school-Paper-Reading
+# Lecture wylee
+#
