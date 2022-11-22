@@ -1,5 +1,5 @@
 ### Graduate-school-Paper-Reading
-### Lecture wylee
+### Lecture:Wylee
 
 - Install yfinance
 ```python
