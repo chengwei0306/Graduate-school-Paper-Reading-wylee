@@ -3,10 +3,10 @@
 ### HW1
 
 ### Environment
-Google Colab
+- Google Colab
 
 
-### code
+### Code
 - Install yfinance
 ```python
 !pip install yfinance
