@@ -2,6 +2,9 @@
 ### Lecturer:Wylee
 ### HW1
 
+- Environment <br/>
+Google Colab
+
 - Install yfinance
 ```python
 !pip install yfinance
