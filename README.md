@@ -1,5 +1,6 @@
 ### Graduate-school-Paper-Reading
-### Lecture:Wylee
+### Lecturer:Wylee
+### HW1
 
 - Install yfinance
 ```python
