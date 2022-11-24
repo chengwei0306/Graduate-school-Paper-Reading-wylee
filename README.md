@@ -1,4 +1,4 @@
-### Graduate-school-Paper-Reading
+### Paper-Reading
 ### Lecturer:Wylee
 ### HW1
 
