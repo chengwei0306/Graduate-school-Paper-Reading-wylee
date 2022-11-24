@@ -34,8 +34,9 @@ V0
 ```
 
 - sum the volume between j --> i as volume 
-- if volume<V0 then a set append Spread <br/>
-                    b set append date
+- if volume<V0 <br/>
+then a set append Spread <br/>
+b set append date
 ```python
 def RareEvent(n,end_date):
   a=[]
