@@ -30,7 +30,7 @@ Note: The Δpn quantities are not independent. Thus, the empirical distribution 
 - Rare Event Detection
 
 ## Process
-- Install yfinance
+### Install yfinance
 ```python
 !pip install yfinance
 ```
