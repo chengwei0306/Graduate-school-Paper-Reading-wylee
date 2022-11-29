@@ -38,8 +38,6 @@ V0=np.mean(Volume)
 V0
 ```
 
-
-
 - sum the volume between j --> i as volume 
 - if volume<V0 <br/>
 then a set append Spread <br/>
@@ -52,14 +50,14 @@ def RareEvent(n,end_date):
   
   for i in range(0,n):                  #len of all
     volume=0
-    for j in range(i):                  #from j to i
-      volume+=Volume[j]
-      if volume<V0:                     #mean()
-        a.append(Close[n]-Close[i])
-        b.append([end_date,Date[i]])
+    for j in range(i):                  #for k ≤ j ≤ n 
+      volume+=Volume[j]                 #(vk + vk+1 + . . . + vn)
+      if volume<V0:                     #(vk + vk+1 + . . . + vn < V0) 
+        a.append(Close[n]-Close[i])     #(Sn – Sj)
+        b.append([end_date,Date[i]])    #Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α}
         # print(a)
         
-  print(max(a))
+  print(max(a))                         #Δpn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
   print(b[-1:])
     # print(volume)
     # print("------")
