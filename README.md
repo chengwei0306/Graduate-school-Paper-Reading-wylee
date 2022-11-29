@@ -13,7 +13,7 @@ Paper-Reading Lecturer:Wylee
 - We repeat the process for every trade by calculating a corresponding maximum price movement within the last V0 trades. Once we obtain these values for the entire sequence of trades, we detect the extreme observations by applying a univariate “quantile-type” rule. Namely, for a fixed level α we select all the observations in the set:<br><br>
 Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α} (1)
 <br><br>
-- Using rule (1) with returns instead of change in price is preferable in a trad- ing environment. We use change in price (Δp) for clarity of exposition.
+- Using rule (1) with returns instead of change in price is preferable in a trading environment. We use change in price (Δp) for clarity of exposition.
 Note: The Δpn quantities are not independent. Thus, the empirical distribution is only an approximation of the true probabilities of price movement. However, rule (1) will identify candidates for rare events which may or may not correspond to the true probability level α. If we use non- overlapping windows, the resulting rare events will correspond better to the level α. There are two reasons why this is not feasible. First, by considering non-overlapping windows we can lose extreme price differences calculated using prices from the non-overlapping windows. Second, in a previous study (Mariani et al., 2009) the authors have shown that returns calculated from tick data exhibit long memory behavior. Thus, even by considering non-overlapping windows one cannot guarantee that the observations are independent.
 
 
