@@ -8,7 +8,7 @@
 ### Dataset
 - Yahoo Finance
 
-### Code
+### Process
 - Install yfinance
 ```python
 !pip install yfinance
