@@ -45,7 +45,7 @@ start_date = '2021-11-15'                          #set start date
 end_date = '2022-11-15'                            #set end date
 
 data = yf.download(tickers, start_date, end_date)   #get data acccording above value
-data['Date']=data.index                             #set index as "Date" Column
+data['Date']=data.index                             #set "Date" Column as index
 
 data=data[['Adj Close','Volume','Date']]               #Get Adj Close
 Close=list(data.iloc[:,0])
@@ -53,14 +53,16 @@ Volume=list(data.iloc[:,1])
 Date=list(data.iloc[:,2])
 print(Volume)
 ```
-### Set V0 as averaged Volume
+### 
+- Set V0 as averaged Volume
 ```python
 import numpy as np
 V0=np.mean(Volume)
 V0
 ```
 
-### sum Volume between j --> i as volume 
+### Sum Volume
+- Sum Volume between j --> i as volume 
 - if volume < V0 <br/>
 then a set append Spread <br/>
 b set append date
