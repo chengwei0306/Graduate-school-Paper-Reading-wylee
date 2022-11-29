@@ -1,5 +1,4 @@
-### Paper-Reading
-### Lecturer:Wylee
+Paper-Reading Lecturer:Wylee
 ### 罕見事件預測:以APPLE股價（調整收盤價）做分析
 
 ### Environment
@@ -74,7 +73,7 @@ RareEvent(251,end_date)                #251-->amount of the data
 - A thorough investigation of the distribution of price changes, conditional on cumulative trading window, would involve the evaluation of all observa- tions for each equity (Sn – Sj|vk + vk+1 + . . . + vn < V0) for k ≤ j ≤ n where n runs through all the trades, Sn is the price, and vn is the volume associated with trade n. Although the distribution would be accurate, such a task would involve significant computational effort considering the large database we use. Because we are interested only in the rare events, we chose to select the extreme observations in this sequence and subsequently analyze only a per- centage of these observations at the tails of the distribution ΔP| V < V0.
 <br><br>
 - Specifically, we construct the sequence of consecutive trades Sk,Sk+1, . . ., Sn and their associated volumes vk , vk+1, . . . , vn such that vk + vk+1+ . . . + vn < V0 and we consider<br><br>
-- Δpn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
+Δpn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
 <br><br>
 - We repeat the process for every trade by calculating a corresponding maximum price movement within the last V0 trades. Once we obtain these values for the entire sequence of trades, we detect the extreme observations by applying a univariate “quantile-type” rule. Namely, for a fixed level α we select all the observations in the set:<br><br>
 Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α} (1)
