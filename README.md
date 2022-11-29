@@ -34,12 +34,14 @@ Note: The Δpn quantities are not independent. Thus, the empirical distribution 
 ```python
 !pip install yfinance
 ```
-
-### Get Apple stock informations from  2021-11-15 to 2022-11-15
+### Import
 ```python
 import pandas as pd                                #導入 pandas套件
 import yfinance as yf                              #導入 finance套件
+```
 
+### Get Apple stock informations from  2021-11-15 to 2022-11-15
+```python
 tickers = ['AAPL']   #設置股票代碼
 start_date = '2021-11-15'                          #set start date
 end_date = '2022-11-15'                            #set end date
@@ -53,7 +55,7 @@ Volume=list(data.iloc[:,1])
 Date=list(data.iloc[:,2])
 print(Volume)
 ```
-### 
+### Set V0
 - Set V0 as averaged Volume
 ```python
 import numpy as np
@@ -79,13 +81,15 @@ def RareEvent(n,end_date):
       if volume<V0:                     #(vk + vk+1 + . . . + vn < V0) 
         a.append(Close[n]-Close[i])     #(Sn – Sj)
         b.append([end_date,Date[i]])    #Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α}
-        
+```
+### ΔPn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
+```python
   print(max(a))                         #ΔPn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
   print(b[-1:])
 
 
 RareEvent(251,end_date)                #251-->amount of the data
 ```
-### result
-18.615509033203125
+### Result
+18.615509033203125 <br>
 [['2022-11-15', Timestamp('2021-11-16 00:00:00')]]
