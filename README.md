@@ -4,8 +4,7 @@ Paper-Reading Lecturer:Wylee
 
 ### 文章原文：節錄自（Rare Events Analysis for High-Frequency Equity Data Written by Dragos Bozdog, Ionu ̧t Florescu, Khaldoun Khashanah, and Jim Wang)  
 - A thorough investigation of the distribution of price changes, conditional on cumulative trading window, would involve the evaluation of all observa- tions for each equity (Sn – Sj|vk + vk+1 + . . . + vn < V0) for k ≤ j ≤ n where n runs through all the trades, Sn is the price, and vn is the volume associated with trade n. Although the distribution would be accurate, such a task would involve significant computational effort considering the large database we use. 
-- (Motivation)
-- Because we are interested only in the rare events, we chose to select the extreme observations in this sequence and subsequently analyze only a per- centage of these observations at the tails of the distribution ΔP| V < V0.
+- (Motivation) Because we are interested only in the rare events, we chose to select the extreme observations in this sequence and subsequently analyze only a per- centage of these observations at the tails of the distribution ΔP| V < V0.
 <br><br>
 - Specifically, we construct the sequence of consecutive trades Sk,Sk+1, . . ., Sn and their associated volumes vk , vk+1, . . . , vn such that vk + vk+1+ . . . + vn < V0 and we consider<br><br>
 Δpn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
