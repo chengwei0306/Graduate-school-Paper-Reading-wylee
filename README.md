@@ -1,6 +1,7 @@
 Subject:1111Paper-Reading  Professor:W.Y. Lee
 
-## 罕見事件預測:以APPLE股價（調整收盤價）做分析  (Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α})
+## 罕見事件預測:以APPLE股價（調整收盤價）做分析  
+(Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α})
 
 ### 文章原文：
 節錄自（Rare Events Analysis for High-Frequency Equity Data Written by Dragos Bozdog, Ionu ̧t Florescu, Khaldoun Khashanah, and Jim Wang)  
@@ -83,6 +84,7 @@ def RareEvent(n,end_date):
         b.append([end_date,Date[i]])    
 ```
 ### ΔPn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}   
+ΔPn =probability
 ```python
   print(max(a))                         #ΔPn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
   print(b[-1:])
