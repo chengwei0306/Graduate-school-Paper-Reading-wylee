@@ -85,3 +85,6 @@ def RareEvent(n,end_date):
 
 RareEvent(251,end_date)                #251-->amount of the data
 ```
+### result
+18.615509033203125
+[['2022-11-15', Timestamp('2021-11-16 00:00:00')]]
