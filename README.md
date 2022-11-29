@@ -1,6 +1,6 @@
 ### Paper-Reading
 ### Lecturer:Wylee
-### HW1
+### 罕見事件分析以APPLE為分析
 
 ### Environment
 - Google Colab
@@ -37,6 +37,8 @@ import numpy as np
 V0=np.mean(Volume)
 V0
 ```
+
+
 
 - sum the volume between j --> i as volume 
 - if volume<V0 <br/>
