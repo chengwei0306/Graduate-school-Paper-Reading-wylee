@@ -8,6 +8,9 @@
 ### Dataset
 - Yahoo Finance
 
+### Abstract
+This work present a methodology to detect rare events which are defined as large price movements relative to the volume traded. We analyze the behavior of equity after the detection of these rare events. 
+
 ### Process
 - Install yfinance
 ```python
