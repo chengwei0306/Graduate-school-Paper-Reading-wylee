@@ -1,10 +1,12 @@
 ### Paper-Reading
 ### Lecturer:Wylee
-### 罕見事件分析以APPLE為分析
+### 罕見事件分析以APPLE股價（調整收盤價）做分析
 
 ### Environment
 - Google Colab
 
+### Dataset
+- Yahoo Finance
 
 ### Code
 - Install yfinance
@@ -47,7 +49,7 @@ def RareEvent(n,end_date):
   a=[]
   b=[]
   volume=0
-  
+  # (Sn – Sj|vk + vk+1 + . . . + vn < V0) for k ≤ j ≤ n 
   for i in range(0,n):                  #len of all
     volume=0
     for j in range(i):                  #for k ≤ j ≤ n 
@@ -55,12 +57,10 @@ def RareEvent(n,end_date):
       if volume<V0:                     #(vk + vk+1 + . . . + vn < V0) 
         a.append(Close[n]-Close[i])     #(Sn – Sj)
         b.append([end_date,Date[i]])    #Q+α(x) = {x:prob(Δp < x) < α or prob (Δp > x) > 1 – α}
-        # print(a)
         
-  print(max(a))                         #Δpn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
+  print(max(a))                         #ΔPn = max{Sn – Sk, Sn – Sk+1, . . ., Sn – Sn–1}
   print(b[-1:])
-    # print(volume)
-    # print("------")
+
 
 RareEvent(251,end_date)                #251-->amount of the data
 ```
