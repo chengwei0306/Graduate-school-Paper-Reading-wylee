@@ -1,6 +1,6 @@
-Paper-Reading Lecturer:Wylee
+Subject:1111Paper-Reading  Professor:W.Y. Lee
 
-### 罕見事件預測:以APPLE股價（調整收盤價）做分析
+## 罕見事件預測:以APPLE股價（調整收盤價）做分析
 
 ### 文章原文：
 節錄自（Rare Events Analysis for High-Frequency Equity Data Written by Dragos Bozdog, Ionu ̧t Florescu, Khaldoun Khashanah, and Jim Wang)  
